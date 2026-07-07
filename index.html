@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ENCODE Lab at ECCV 2026: three papers and one tutorial from Westlake University."
+    />
+    <meta property="og:title" content="ENCODE Lab @ ECCV 2026" />
+    <meta
+      property="og:description"
+      content="Three ECCV 2026 papers and one tutorial on efficient and reliable AI."
+    />
+    <meta property="og:image" content="assets/media/malmo_hero_wide.jpg" />
+    <title>ENCODE Lab @ ECCV 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700;8..60,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ENCODE Lab ECCV 2026 home">
+        <img src="assets/logos/encode_lab.svg" alt="" />
+        <span>ENCODE @ ECCV 2026</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#program">Program</a>
+        <a href="#people">People</a>
+        <a href="#papers">Papers</a>
+        <a href="#tutorial">Tutorial</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="ENCODE Lab at ECCV 2026">
+        <img
+          class="hero-image"
+          src="assets/media/malmo_hero_wide.jpg"
+          alt="Aerial view of Malmo waterfront, Turning Torso, and Oresund Bridge"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">ECCV 2026 · Malm&ouml;, Sweden</p>
+          <h1>Efficient models, reliable vision.</h1>
+          <p class="hero-copy">
+            ENCODE Lab at Westlake University presents three accepted papers and one
+            tutorial at ECCV 2026, spanning fast visual generation, edge deployment,
+            and reliable multimodal inference.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#program">Program Overview</a>
+            <a class="button secondary" href="#papers">Accepted Papers</a>
+            <a class="button secondary" href="#tutorial">Tutorial</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary-strip" aria-label="ECCV summary">
+        <div class="summary-item">
+          <strong>3</strong>
+          <span>accepted papers</span>
+        </div>
+        <div class="summary-item">
+          <strong>1</strong>
+          <span>morning tutorial</span>
+        </div>
+        <div class="summary-item">
+          <strong>6</strong>
+          <span>lab members</span>
+        </div>
+        <div class="summary-item">
+          <strong>Malm&ouml;</strong>
+          <span>ECCV 2026</span>
+        </div>
+      </section>
+
+      <section class="section program-section" id="program" aria-label="ECCV program overview">
+        <div class="program-copy">
+          <p class="section-kicker">At a Glance</p>
+          <h2>Two tracks at ECCV 2026.</h2>
+          <p>
+            Three accepted papers form the research track: fast generation, edge deployment, and
+            MLLM reliability. The tutorial is a separate educational track on efficient MLLM
+            inference.
+          </p>
+        </div>
+        <div class="program-map">
+          <article class="track-panel papers-track">
+            <div class="track-head">
+              <span>Research Track</span>
+              <strong>Three accepted papers</strong>
+            </div>
+            <a class="track-row" href="#lisa">
+              <span class="track-index">01</span>
+              <div>
+                <strong>LISA</strong>
+                <p>Fast autoregressive image generation</p>
+              </div>
+            </a>
+            <a class="track-row" href="#evar">
+              <span class="track-index">02</span>
+              <div>
+                <strong>EVAR</strong>
+                <p>Edge visual autoregressive models</p>
+              </div>
+            </a>
+            <a class="track-row" href="#tars">
+              <span class="track-index">03</span>
+              <div>
+                <strong>TARS</strong>
+                <p>Hallucination reduction in MLLMs</p>
+              </div>
+            </a>
+          </article>
+          <article class="track-panel tutorial-track">
+            <div class="track-head">
+              <span>Tutorial Track</span>
+              <strong>Efficient MLLM inference</strong>
+            </div>
+            <a class="track-row" href="#tutorial">
+              <span class="track-index">AM</span>
+              <div>
+                <strong>Sep 8, Morning Session</strong>
+                <p>Approximate and exact computing for multimodal inference</p>
+              </div>
+            </a>
+            <div class="track-tags" aria-label="Tutorial topics">
+              <span>Compression</span>
+              <span>Token efficiency</span>
+              <span>Serving</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section people-section" id="people">
+        <div class="section-heading centered">
+          <p class="section-kicker">People</p>
+          <h2>Contributors and roles.</h2>
+        </div>
+        <div class="role-grid">
+          <article class="role-panel">
+            <div class="role-heading">
+              <span>Paper Track</span>
+              <strong>Paper Leads</strong>
+            </div>
+            <a class="role-person" href="https://neuraliying.github.io/" target="_blank" rel="noopener">
+              <img src="assets/avatars/ying_li.jpg" alt="Ying Li" />
+              <div>
+                <strong>Ying Li</strong>
+                <span>LISA · EVAR</span>
+              </div>
+            </a>
+            <a class="role-person" href="https://aden9460.github.io/Zefang-Wang/" target="_blank" rel="noopener">
+              <img src="assets/avatars/zefang_wang.jpg" alt="Zefang Wang" />
+              <div>
+                <strong>Zefang Wang</strong>
+                <span>EVAR</span>
+              </div>
+            </a>
+            <a class="role-person" href="https://kejiazhang-robust.github.io/" target="_blank" rel="noopener">
+              <img src="assets/avatars/kejia_zhang.jpg" alt="Kejia Zhang" />
+              <div>
+                <strong>Kejia Zhang</strong>
+                <span>TARS</span>
+              </div>
+            </a>
+          </article>
+          <article class="role-panel">
+            <div class="role-heading">
+              <span>Tutorial Track</span>
+              <strong>Organizers and Advisor</strong>
+            </div>
+            <a class="role-person" href="https://huanwang.tech/" target="_blank" rel="noopener">
+              <img src="assets/avatars/huan_wang.png" alt="Huan Wang" />
+              <div>
+                <strong>Huan Wang</strong>
+                <span>Advisor · Organizer</span>
+              </div>
+            </a>
+            <a class="role-person" href="https://kd-tao.github.io/" target="_blank" rel="noopener">
+              <img src="assets/avatars/keda_tao.jpg" alt="Keda Tao" />
+              <div>
+                <strong>Keda Tao</strong>
+                <span>TARS · Organizer</span>
+              </div>
+            </a>
+            <a class="role-person" href="https://cokeshao.github.io/" target="_blank" rel="noopener">
+              <img src="assets/avatars/kele_shao.jpg" alt="Kele Shao" />
+              <div>
+                <strong>Kele Shao</strong>
+                <span>Organizer</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section papers-section" id="papers">
+        <div class="section-heading">
+          <p class="section-kicker">Accepted Papers</p>
+          <h2>Three ECCV 2026 papers from ENCODE Lab.</h2>
+          <p>
+            The papers are organized by technical focus: fast generation, edge deployment, and
+            multimodal reliability. Public links are included when available.
+          </p>
+        </div>
+
+        <div class="paper-grid three-up">
+          <article class="paper-card accent-cyan" id="lisa">
+            <div class="paper-visual paper-motif motif-lisa" aria-hidden="true">
+              <div class="motif-grid">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="motif-route"></div>
+            </div>
+            <div class="paper-topline">
+              <span class="paper-index">01</span>
+              <span class="paper-tag">ECCV 2026</span>
+            </div>
+            <h3>LISA: Locality-Informed Speculative Decoding for Accelerating Autoregressive Image Generation</h3>
+            <p class="paper-topic">Speculative decoding · Autoregressive image generation</p>
+            <p class="paper-note">
+              LISA studies locality-informed speculative decoding for faster autoregressive image
+              generation.
+            </p>
+            <p class="authors">
+              <a href="https://neuraliying.github.io/" target="_blank" rel="noopener">Ying Li</a>,
+              Siyong Jian, Zhaode Wang, Zhiwen Chen, Chengfei Lv, and
+              <a href="https://huanwang.tech/" target="_blank" rel="noopener">Huan Wang</a>
+            </p>
+            <div class="link-row" aria-label="LISA links">
+              <span class="status-chip">Paper pending</span>
+              <span class="status-chip">Code pending</span>
+            </div>
+          </article>
+
+          <article class="paper-card accent-gold" id="evar">
+            <div class="paper-visual paper-motif motif-evar" aria-hidden="true">
+              <div class="motif-chip">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="motif-bars">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="paper-topline">
+              <span class="paper-index">02</span>
+              <span class="paper-tag">ECCV 2026</span>
+            </div>
+            <h3>EVAR: Edge Visual Autoregressive Models via Principled Pruning</h3>
+            <p class="paper-topic">Edge AI · Visual autoregressive models · Pruning</p>
+            <p class="paper-note">
+              EVAR studies principled pruning for visual autoregressive models under edge
+              deployment constraints.
+            </p>
+            <p class="authors">
+              <a href="https://aden9460.github.io/Zefang-Wang/" target="_blank" rel="noopener">Zefang Wang</a>,
+              <a href="https://neuraliying.github.io/" target="_blank" rel="noopener">Ying Li</a>,
+              Yanyu Li,
+              <a href="https://sunshine-0903.github.io/" target="_blank" rel="noopener">Mingluo Su</a>,
+              Simin Xu, Guanzhong Tian, and
+              <a href="https://huanwang.tech/" target="_blank" rel="noopener">Huan Wang</a>
+            </p>
+            <div class="link-row" aria-label="EVAR links">
+              <a href="https://aden9460.github.io/EVAR/" target="_blank" rel="noopener">Project</a>
+              <a href="https://github.com/aden9460/EVAR-code" target="_blank" rel="noopener">Code</a>
+              <span class="status-chip">arXiv pending</span>
+            </div>
+          </article>
+
+          <article class="paper-card featured accent-red" id="tars">
+            <div class="paper-visual paper-teaser">
+              <img src="assets/media/tars_featured.png" alt="TARS project teaser" />
+            </div>
+            <div class="paper-topline">
+              <span class="paper-index">03</span>
+              <span class="paper-tag">ECCV 2026</span>
+            </div>
+            <h3>TARS: MinMax Token-Adaptive Preference Strategy for Hallucination Reduction in MLLMs</h3>
+            <p class="paper-topic">MLLM reliability · Preference optimization · Hallucination reduction</p>
+            <p class="paper-note">
+              TARS uses a token-adaptive preference strategy to improve visual grounding and reduce
+              hallucinations in multimodal large language models.
+            </p>
+            <p class="authors">
+              <a href="https://kejiazhang-robust.github.io/Personal-Page/" target="_blank" rel="noopener">Kejia Zhang</a>,
+              <a href="https://kd-tao.github.io/" target="_blank" rel="noopener">Keda Tao</a>,
+              Zhiming Luo, Chang Liu, Jiasheng Tang, and
+              <a href="https://huanwang.tech/" target="_blank" rel="noopener">Huan Wang</a>
+            </p>
+            <div class="link-row" aria-label="TARS links">
+              <a href="https://arxiv.org/abs/2507.21584" target="_blank" rel="noopener">arXiv</a>
+              <a href="https://arxiv.org/pdf/2507.21584" target="_blank" rel="noopener">PDF</a>
+              <a href="https://github.com/KejiaZhang-Robust/TARS" target="_blank" rel="noopener">Code</a>
+              <a href="https://kejiazhang-robust.github.io/tars_web" target="_blank" rel="noopener">Website</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tutorial-section" id="tutorial">
+        <div class="tutorial-copy">
+          <p class="section-kicker">ECCV 2026 Tutorial</p>
+          <h2>Efficient MLLM Inference via Approximated and Exact Computing.</h2>
+          <p>
+            The tutorial is separate from the paper track. It provides a structured overview of
+            efficient MLLM inference, from approximate methods that reduce redundancy to exact
+            system methods that preserve model outputs.
+          </p>
+          <div class="tutorial-facts" aria-label="Tutorial facts">
+            <div>
+              <span>Date</span>
+              <strong>Sep 8, 2026</strong>
+            </div>
+            <div>
+              <span>Time</span>
+              <strong>Morning Session</strong>
+            </div>
+            <div>
+              <span>Location</span>
+              <strong>Malm&ouml;, Sweden</strong>
+            </div>
+          </div>
+          <a class="button primary" href="https://einfer-mllm.github.io/Tutorial-ECCV-26/" target="_blank" rel="noopener">
+            Tutorial Page
+          </a>
+        </div>
+
+        <div class="tutorial-panel">
+          <div class="method-pair" aria-label="Tutorial framing">
+            <article>
+              <span>Approximate Computing</span>
+              <strong>Reduce redundant computation</strong>
+              <p>Methods that lower inference cost through controlled approximation.</p>
+            </article>
+            <article>
+              <span>Exact Computing</span>
+              <strong>Preserve model outputs</strong>
+              <p>System techniques that improve serving efficiency without changing predictions.</p>
+            </article>
+          </div>
+          <div class="tutorial-agenda" aria-label="Tutorial structure">
+            <div class="agenda-heading">
+              <span>Program Structure</span>
+              <strong>From compression to serving</strong>
+            </div>
+            <article>
+              <span>Part I</span>
+              <div>
+                <h3>Model Compression</h3>
+                <p>Quantization, sparsity, and low-rank methods for reducing MLLM inference cost.</p>
+              </div>
+            </article>
+            <article>
+              <span>Part II</span>
+              <div>
+                <h3>Token Efficiency</h3>
+                <p>Compression methods for long multimodal contexts and autoregressive generation.</p>
+              </div>
+            </article>
+            <article>
+              <span>Part III</span>
+              <div>
+                <h3>System-Level Design</h3>
+                <p>Serving and hardware-aware optimization for throughput and latency.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/logos/westlake_logo.png" alt="" />
+        <span>ENCODE Lab · Westlake University</span>
+      </div>
+      <p>
+        Built for ECCV 2026. Hero photo:
+        <a
+          href="https://commons.wikimedia.org/wiki/File:19-07-12-Malm%C3%B6-DJI_0765-Turning-Torso-RalfR.jpg"
+          target="_blank"
+          rel="noopener"
+        >Wikimedia Commons</a>.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
