@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ENCODE Lab at ECCV 2026: three papers and one tutorial from Westlake University."
+      content="ENCODE Lab at ECCV 2026: three accepted papers and an ECCV tutorial from Westlake University."
     />
     <meta property="og:title" content="ENCODE Lab @ ECCV 2026" />
     <meta
       property="og:description"
-      content="Three ECCV 2026 papers and one tutorial on efficient and reliable AI."
+      content="Three ECCV 2026 papers and one tutorial on efficient vision and multimodal inference."
     />
     <meta property="og:image" content="assets/media/malmo_hero_wide.jpg" />
     <title>ENCODE Lab @ ECCV 2026</title>
@@ -53,17 +53,13 @@
         />
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">ECCV 2026 · Malm&ouml;, Sweden</p>
-          <h1>Efficient models, reliable vision.</h1>
-          <p class="hero-copy">
-            ENCODE Lab at Westlake University presents three ECCV 2026 papers and
-            one tutorial on fast generation, edge deployment, and reliable
-            multimodal inference.
-          </p>
+          <p class="eyebrow">ECCV 2026 · Malm&ouml;, Sweden · Sep 8-12</p>
+          <h1>Efficient vision systems for generation and inference.</h1>
           <div class="hero-actions">
-            <a class="button primary" href="#program">Program Overview</a>
-            <a class="button secondary" href="#papers">Accepted Papers</a>
-            <a class="button secondary" href="#tutorial">Tutorial</a>
+            <a class="button primary" href="#papers">View Papers</a>
+            <a class="button secondary" href="https://einfer-mllm.github.io/Tutorial-ECCV-26/" target="_blank" rel="noopener">
+              Tutorial Page
+            </a>
           </div>
         </div>
       </section>
@@ -89,67 +85,61 @@
 
       <section class="section program-section" id="program" aria-label="ECCV program overview">
         <div class="program-copy">
-          <p class="section-kicker">At a Glance</p>
-          <h2>Two tracks at ECCV 2026.</h2>
-          <p>
-            The research track covers fast generation, edge deployment, and MLLM
-            reliability. The tutorial track focuses on efficient multimodal
-            inference.
-          </p>
+          <p class="section-kicker">Agenda</p>
+          <h2>Research and tutorial.</h2>
         </div>
-        <div class="program-map">
-          <article class="track-panel papers-track">
-            <div class="track-head">
-              <span>Research Track</span>
-              <strong>Three accepted papers</strong>
+        <div class="program-board" aria-label="ENCODE Lab ECCV contributions">
+          <a class="program-row" href="#lisa">
+            <span class="program-marker" aria-hidden="true"></span>
+            <div class="program-meta">
+              <span>Paper 01</span>
+              <em>Generation</em>
             </div>
-            <a class="track-row" href="#lisa">
-              <span class="track-index">01</span>
-              <div>
-                <strong>LISA</strong>
-                <p>Fast autoregressive image generation</p>
-              </div>
-            </a>
-            <a class="track-row" href="#evar">
-              <span class="track-index">02</span>
-              <div>
-                <strong>EVAR</strong>
-                <p>Edge visual autoregressive models</p>
-              </div>
-            </a>
-            <a class="track-row" href="#tars">
-              <span class="track-index">03</span>
-              <div>
-                <strong>TARS</strong>
-                <p>Hallucination reduction in MLLMs</p>
-              </div>
-            </a>
-          </article>
-          <article class="track-panel tutorial-track">
-            <div class="track-head">
-              <span>Tutorial Track</span>
-              <strong>Efficient MLLM inference</strong>
+            <div class="program-main">
+              <strong>LISA</strong>
+              <p>Locality-informed speculative decoding for autoregressive image generation.</p>
             </div>
-            <a class="track-row" href="#tutorial">
-              <span class="track-index">AM</span>
-              <div>
-                <strong>Sep 8, Morning Session</strong>
-                <p>Approximate and exact computing for multimodal inference</p>
-              </div>
-            </a>
-            <div class="track-tags" aria-label="Tutorial topics">
-              <span>Compression</span>
-              <span>Token efficiency</span>
-              <span>Serving</span>
+          </a>
+          <a class="program-row" href="#evar">
+            <span class="program-marker" aria-hidden="true"></span>
+            <div class="program-meta">
+              <span>Paper 02</span>
+              <em>Edge AI</em>
             </div>
-          </article>
+            <div class="program-main">
+              <strong>EVAR</strong>
+              <p>Principled pruning for edge visual autoregressive models.</p>
+            </div>
+          </a>
+          <a class="program-row" href="#tars">
+            <span class="program-marker" aria-hidden="true"></span>
+            <div class="program-meta">
+              <span>Paper 03</span>
+              <em>Reliability</em>
+            </div>
+            <div class="program-main">
+              <strong>TARS</strong>
+              <p>Token-adaptive preference optimization for MLLM grounding.</p>
+            </div>
+          </a>
+          <a class="program-row tutorial-entry" href="#tutorial">
+            <span class="program-marker" aria-hidden="true"></span>
+            <div class="program-meta">
+              <span>Tutorial</span>
+              <em>Inference</em>
+            </div>
+            <div class="program-main">
+              <strong>Sep 8 Morning</strong>
+              <p>Efficient MLLM inference via approximate and exact computing.</p>
+            </div>
+          </a>
         </div>
       </section>
 
       <section class="section people-section" id="people">
         <div class="section-heading centered">
-          <p class="section-kicker">The team heading to Malm&ouml;</p>
-          <h2>Meet our encoders at ECCV&rsquo;26.</h2>
+          <p class="section-kicker">People</p>
+          <h2>Presenters and organizers.</h2>
         </div>
         <div class="people-row">
           <a class="person-card" href="https://neuraliying.github.io/" target="_blank" rel="noopener">
@@ -189,10 +179,6 @@
         <div class="section-heading">
           <p class="section-kicker">Accepted Papers</p>
           <h2>Three ECCV 2026 papers from ENCODE Lab.</h2>
-          <p>
-            The papers are organized by technical focus: fast generation, edge deployment, and
-            multimodal reliability. Public links are included when available.
-          </p>
         </div>
 
         <div class="paper-grid three-up">
@@ -205,11 +191,7 @@
               <span class="paper-tag">ECCV 2026</span>
             </div>
             <h3>LISA: Locality-Informed Speculative Decoding for Accelerating Autoregressive Image Generation</h3>
-            <p class="paper-topic">Speculative decoding · Autoregressive image generation</p>
-            <p class="paper-note">
-              LISA studies locality-informed speculative decoding for faster autoregressive image
-              generation.
-            </p>
+            <p class="paper-topic">Speculative decoding for autoregressive image generation</p>
             <p class="authors">
               <a href="https://neuraliying.github.io/" target="_blank" rel="noopener">Ying Li</a>,
               Siyong Jian, Zhaode Wang, Zhiwen Chen, Chengfei Lv, and
@@ -230,11 +212,7 @@
               <span class="paper-tag">ECCV 2026</span>
             </div>
             <h3>EVAR: Edge Visual Autoregressive Models via Principled Pruning</h3>
-            <p class="paper-topic">Edge AI · Visual autoregressive models · Pruning</p>
-            <p class="paper-note">
-              EVAR studies principled pruning for visual autoregressive models under edge
-              deployment constraints.
-            </p>
+            <p class="paper-topic">Principled pruning for edge visual autoregressive models</p>
             <p class="authors">
               <a href="https://aden9460.github.io/Zefang-Wang/" target="_blank" rel="noopener">Zefang Wang</a>,
               <a href="https://neuraliying.github.io/" target="_blank" rel="noopener">Ying Li</a>,
@@ -259,11 +237,7 @@
               <span class="paper-tag">ECCV 2026</span>
             </div>
             <h3>TARS: MinMax Token-Adaptive Preference Strategy for Hallucination Reduction in MLLMs</h3>
-            <p class="paper-topic">MLLM reliability · Preference optimization · Hallucination reduction</p>
-            <p class="paper-note">
-              TARS uses a token-adaptive preference strategy to improve visual grounding and reduce
-              hallucinations in multimodal large language models.
-            </p>
+            <p class="paper-topic">Token-adaptive preference optimization for MLLM grounding</p>
             <p class="authors">
               <a href="https://kejiazhang-robust.github.io/Personal-Page/" target="_blank" rel="noopener">Kejia Zhang</a>,
               <a href="https://kd-tao.github.io/" target="_blank" rel="noopener">Keda Tao</a>,
@@ -294,14 +268,14 @@
             <p class="section-kicker">ECCV 2026 Tutorial</p>
             <h2>Efficient MLLM Inference via Approximate and Exact Computing.</h2>
             <p>
-              A compact tutorial on reducing multimodal inference cost while
-              preserving the reliability needed for real systems.
+              Methods for reducing multimodal inference cost under quality,
+              grounding, and hardware constraints.
             </p>
             <div class="tutorial-tags" aria-label="Tutorial topics">
-              <span>Compression</span>
-              <span>Token efficiency</span>
+              <span>Approximation</span>
+              <span>Exact reuse</span>
+              <span>Token selection</span>
               <span>Serving</span>
-              <span>Hardware-aware design</span>
             </div>
             <a class="button primary" href="https://einfer-mllm.github.io/Tutorial-ECCV-26/" target="_blank" rel="noopener">
               Tutorial Page
@@ -313,17 +287,17 @@
           <article>
             <span>01</span>
             <strong>Approximate computing</strong>
-            <p>Reduce redundant visual and textual computation.</p>
+            <p>Skip redundant visual and textual computation.</p>
           </article>
           <article>
             <span>02</span>
             <strong>Exact computing</strong>
-            <p>Improve serving efficiency without changing model outputs.</p>
+            <p>Reuse computation without changing model outputs.</p>
           </article>
           <article>
             <span>03</span>
-            <strong>Deployment practice</strong>
-            <p>Connect model design, system constraints, and hardware limits.</p>
+            <strong>Systems practice</strong>
+            <p>Tie model choices to latency, memory, and hardware limits.</p>
           </article>
         </div>
       </section>
