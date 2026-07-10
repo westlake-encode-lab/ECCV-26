@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="ENCODE Lab at ECCV 2026: three accepted papers and an ECCV tutorial from Westlake University."
-    />
-    <meta property="og:title" content="ENCODE Lab @ ECCV 2026" />
+      content="ENCODE Lab at ECCV 2026: three accepted papers and an ECCV tutorial from Westlake University.">
+    <meta property="og:title" content="ENCODE Lab @ ECCV 2026">
     <meta
       property="og:description"
-      content="Three ECCV 2026 papers and one tutorial on efficient vision and multimodal inference."
-    />
-    <meta property="og:image" content="assets/media/malmo_hero_wide.jpg" />
+      content="Three ECCV 2026 papers and one tutorial on efficient vision and multimodal inference.">
+    <meta property="og:image" content="assets/media/og-eccv26.png">
+    <meta property="og:image:width" content="1733">
+    <meta property="og:image:height" content="908">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ENCODE Lab @ ECCV 2026">
+    <meta
+      name="twitter:description"
+      content="Three ECCV 2026 papers and one tutorial on efficient vision and multimodal inference.">
+    <meta name="twitter:image" content="assets/media/og-eccv26.png">
     <title>ENCODE Lab @ ECCV 2026</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700;8..60,800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="ENCODE Lab ECCV 2026 home">
-        <img src="assets/logos/encode_lab.svg" alt="" />
-        <span>ENCODE @ ECCV 2026</span>
+        <img src="assets/logos/encode_lab.svg" alt="">
       </a>
       <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
         <span></span>
@@ -49,12 +53,15 @@
         <img
           class="hero-image"
           src="assets/media/malmo_hero_wide.jpg"
-          alt="Aerial view of Malmo waterfront, Turning Torso, and Oresund Bridge"
-        />
+          alt="Aerial view of Malmo waterfront, Turning Torso, and Oresund Bridge">
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">ECCV 2026 · Malm&ouml;, Sweden · Sep 8-12</p>
           <h1>Efficient vision systems for generation and inference.</h1>
+          <p class="hero-dek">
+            Three accepted papers and one tutorial on efficient, reliable vision
+            and multimodal systems.
+          </p>
           <div class="hero-actions">
             <a class="button primary" href="#papers">View Papers</a>
             <a class="button secondary" href="https://einfer-mllm.github.io/Tutorial-ECCV-26/" target="_blank" rel="noopener">
@@ -62,6 +69,14 @@
             </a>
           </div>
         </div>
+        <div class="hero-aside" aria-hidden="true">
+          <span>55.6050&deg; N</span>
+          <span>13.0038&deg; E</span>
+        </div>
+        <a class="scroll-cue" href="#program">
+          <span>Explore</span>
+          <i aria-hidden="true"></i>
+        </a>
       </section>
 
       <section class="summary-strip" aria-label="ECCV summary">
@@ -85,10 +100,16 @@
 
       <section class="section program-section" id="program" aria-label="ECCV program overview">
         <div class="program-copy">
-          <p class="section-kicker">Agenda</p>
-          <h2>Research and tutorial.</h2>
+          <div>
+            <p class="section-kicker">Agenda</p>
+            <h2>Research and tutorial.</h2>
+          </div>
+          <div class="program-counts" role="group" aria-label="Three papers and one tutorial">
+            <span><strong>03</strong> Papers</span>
+            <span><strong>01</strong> Tutorial</span>
+          </div>
         </div>
-        <div class="program-board" aria-label="ENCODE Lab ECCV contributions">
+        <div class="program-board" role="group" aria-label="ENCODE Lab ECCV contributions">
           <a class="program-row" href="#lisa">
             <span class="program-marker" aria-hidden="true"></span>
             <div class="program-meta">
@@ -138,39 +159,45 @@
 
       <section class="section people-section" id="people">
         <div class="section-heading centered">
-          <p class="section-kicker">People</p>
-          <h2>Presenters and organizers.</h2>
+          <p class="section-kicker">ENCODE Lab Family</p>
+          <h2>The people behind our ECCV 2026 work.</h2>
+          <a
+            class="lab-link"
+            href="https://westlake-encode-lab.github.io/"
+            target="_blank"
+            rel="noopener"
+          >Discover ENCODE Lab</a>
         </div>
         <div class="people-row">
           <a class="person-card" href="https://neuraliying.github.io/" target="_blank" rel="noopener">
-            <img src="assets/avatars/ying_li.jpg" alt="Ying Li" />
+            <img src="assets/avatars/ying_li.jpg" alt="Ying Li">
             <strong>Ying Li</strong>
             <span>LISA · EVAR</span>
-            <small>Lead Author</small>
+            <small>Postdoctoral Researcher</small>
           </a>
           <a class="person-card" href="https://aden9460.github.io/Zefang-Wang/" target="_blank" rel="noopener">
-            <img src="assets/avatars/zefang_wang.jpg" alt="Zefang Wang" />
+            <img src="assets/avatars/zefang_wang.jpg" alt="Zefang Wang">
             <strong>Zefang Wang</strong>
             <span>EVAR</span>
-            <small>Lead Author</small>
+            <small>ENCODE Lab Alumnus</small>
           </a>
           <a class="person-card" href="https://kejiazhang-robust.github.io/Personal-Page/" target="_blank" rel="noopener">
-            <img src="assets/avatars/kejia_zhang.jpg" alt="Kejia Zhang" />
+            <img src="assets/avatars/kejia_zhang.jpg" alt="Kejia Zhang">
             <strong>Kejia Zhang</strong>
             <span>TARS</span>
             <small>Lead Author</small>
           </a>
           <a class="person-card" href="https://kd-tao.github.io/" target="_blank" rel="noopener">
-            <img src="assets/avatars/keda_tao.jpg" alt="Keda Tao" />
+            <img src="assets/avatars/keda_tao.jpg" alt="Keda Tao">
             <strong>Keda Tao</strong>
             <span>TARS · Tutorial</span>
-            <small>Co-author · Organizer</small>
+            <small>PhD Student</small>
           </a>
           <a class="person-card" href="https://huanwang.tech/" target="_blank" rel="noopener">
-            <img src="assets/avatars/huan_wang.png" alt="Huan Wang" />
+            <img src="assets/avatars/huan_wang.png" alt="Huan Wang">
             <strong>Huan Wang</strong>
             <span>Tutorial</span>
-            <small>Advisor · Organizer</small>
+            <small>Lab Director · Faculty Advisor</small>
           </a>
         </div>
       </section>
@@ -184,7 +211,7 @@
         <div class="paper-grid three-up">
           <article class="paper-card accent-cyan" id="lisa">
             <div class="paper-visual paper-image">
-              <img src="assets/media/lisa_visual.jpg" alt="LISA visual overview" />
+              <img src="assets/media/lisa_visual.jpg" alt="LISA visual overview">
             </div>
             <div class="paper-topline">
               <span class="paper-index">01</span>
@@ -197,7 +224,7 @@
               Siyong Jian, Zhaode Wang, Zhiwen Chen, Chengfei Lv, and
               <a href="https://huanwang.tech/" target="_blank" rel="noopener">Huan Wang</a>
             </p>
-            <div class="link-row" aria-label="LISA links">
+            <div class="link-row" role="group" aria-label="LISA links">
               <span class="status-chip">Paper pending</span>
               <span class="status-chip">Code pending</span>
             </div>
@@ -205,7 +232,7 @@
 
           <article class="paper-card accent-gold" id="evar">
             <div class="paper-visual paper-image">
-              <img src="assets/media/evar_visual.jpg" alt="EVAR visual overview" />
+              <img src="assets/media/evar_visual.jpg" alt="EVAR visual overview">
             </div>
             <div class="paper-topline">
               <span class="paper-index">02</span>
@@ -221,7 +248,7 @@
               Simin Xu, Guanzhong Tian, and
               <a href="https://huanwang.tech/" target="_blank" rel="noopener">Huan Wang</a>
             </p>
-            <div class="link-row" aria-label="EVAR links">
+            <div class="link-row" role="group" aria-label="EVAR links">
               <a href="https://aden9460.github.io/EVAR/" target="_blank" rel="noopener">Project</a>
               <a href="https://github.com/aden9460/EVAR-code" target="_blank" rel="noopener">Code</a>
               <span class="status-chip">arXiv pending</span>
@@ -230,7 +257,7 @@
 
           <article class="paper-card featured accent-red" id="tars">
             <div class="paper-visual paper-teaser">
-              <img src="assets/media/tars_featured.png" alt="TARS project teaser" />
+              <img src="assets/media/tars_featured.png" alt="TARS project teaser">
             </div>
             <div class="paper-topline">
               <span class="paper-index">03</span>
@@ -244,7 +271,7 @@
               Zhiming Luo, Chang Liu, Jiasheng Tang, and
               <a href="https://huanwang.tech/" target="_blank" rel="noopener">Huan Wang</a>
             </p>
-            <div class="link-row" aria-label="TARS links">
+            <div class="link-row" role="group" aria-label="TARS links">
               <a href="https://arxiv.org/abs/2507.21584" target="_blank" rel="noopener">arXiv</a>
               <a href="https://arxiv.org/pdf/2507.21584" target="_blank" rel="noopener">PDF</a>
               <a href="https://github.com/KejiaZhang-Robust/TARS" target="_blank" rel="noopener">Code</a>
@@ -257,7 +284,7 @@
       <section class="section tutorial-section" id="tutorial">
         <div class="tutorial-stage">
           <div class="tutorial-media">
-            <img src="assets/media/tutorial_inference_banner.png" alt="Efficient MLLM inference visual" />
+            <img src="assets/media/tutorial_inference_banner.png" alt="Efficient MLLM inference visual">
             <div class="tutorial-caption">
               <span>Morning Tutorial</span>
               <strong>Sep 8 · Malm&ouml;</strong>
@@ -271,7 +298,7 @@
               Methods for reducing multimodal inference cost under quality,
               grounding, and hardware constraints.
             </p>
-            <div class="tutorial-tags" aria-label="Tutorial topics">
+            <div class="tutorial-tags" role="group" aria-label="Tutorial topics">
               <span>Approximation</span>
               <span>Exact reuse</span>
               <span>Token selection</span>
@@ -283,7 +310,7 @@
           </div>
         </div>
 
-        <div class="tutorial-structure" aria-label="Tutorial structure">
+        <div class="tutorial-structure" role="group" aria-label="Tutorial structure">
           <article>
             <span>01</span>
             <strong>Approximate computing</strong>
@@ -306,7 +333,7 @@
 
     <footer class="site-footer">
       <div>
-        <img src="assets/logos/westlake_logo.png" alt="" />
+        <img src="assets/logos/westlake_logo.png" alt="">
         <span>ENCODE Lab · Westlake University</span>
       </div>
       <p>

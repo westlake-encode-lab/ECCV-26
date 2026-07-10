@@ -5,6 +5,13 @@ const navLinks = document.querySelectorAll(".site-nav a");
 const themeToggle = document.querySelector(".theme-toggle");
 const themeLabel = document.querySelector(".theme-label");
 const sections = [...document.querySelectorAll("main section[id]")];
+const revealItems = document.querySelectorAll(
+  ".summary-strip, .program-copy, .program-board, .section-heading, .people-row, .paper-card, .tutorial-stage, .tutorial-structure"
+);
+
+function updateHeader() {
+  header?.classList.toggle("scrolled", window.scrollY > 36);
+}
 
 function setTheme(theme) {
   root.setAttribute("data-theme", theme);
@@ -43,6 +50,28 @@ themeToggle?.addEventListener("click", () => {
   const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
   setTheme(nextTheme);
 });
+
+updateHeader();
+window.addEventListener("scroll", updateHeader, { passive: true });
+
+revealItems.forEach((item) => item.classList.add("reveal"));
+
+if ("IntersectionObserver" in window && revealItems.length) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -8%", threshold: 0.08 }
+  );
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+}
 
 if ("IntersectionObserver" in window && sections.length) {
   const observer = new IntersectionObserver(
