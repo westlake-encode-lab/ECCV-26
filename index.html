@@ -26,7 +26,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&amp;family=Space+Mono:wght@400;700&amp;display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260818-2">
+    <link rel="stylesheet" href="styles.css?v=20260818-3">
   </head>
   <body>
     <header class="site-header">
@@ -38,7 +38,6 @@
         <span></span>
       </button>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#program">Program</a>
         <a href="#people">People</a>
         <a href="#papers">Papers</a>
         <a href="#tutorial">Tutorial</a>
@@ -74,94 +73,17 @@
           <span>55.6050&deg; N</span>
           <span>13.0038&deg; E</span>
         </div>
-        <a class="scroll-cue" href="#program">
+        <a class="scroll-cue" href="#people">
           <span>Explore</span>
           <i aria-hidden="true"></i>
         </a>
       </section>
 
-      <section class="summary-strip" aria-label="ECCV summary">
-        <div class="summary-item">
-          <strong>3</strong>
-          <span>accepted papers</span>
-        </div>
-        <div class="summary-item">
-          <strong>1</strong>
-          <span>morning tutorial</span>
-        </div>
-        <div class="summary-item">
-          <strong>5</strong>
-          <span>presenters &amp; organizers</span>
-        </div>
-        <div class="summary-item">
-          <strong>Malm&ouml;</strong>
-          <span>ECCV 2026</span>
-        </div>
-      </section>
-
-      <section class="section program-section" id="program" aria-label="ECCV program overview">
-        <div class="program-copy">
-          <div>
-            <p class="section-kicker">Agenda</p>
-            <h2>Research and tutorial.</h2>
-          </div>
-          <div class="program-counts" role="group" aria-label="Three papers and one tutorial">
-            <span><strong>03</strong> Papers</span>
-            <span><strong>01</strong> Tutorial</span>
-          </div>
-        </div>
-        <div class="program-board" role="group" aria-label="ENCODE Lab ECCV contributions">
-          <a class="program-row" href="#lisa">
-            <span class="program-marker" aria-hidden="true"></span>
-            <div class="program-meta">
-              <span>Paper 01</span>
-              <em>Generation</em>
-            </div>
-            <div class="program-main">
-              <strong>LISA</strong>
-              <p>Locality-informed speculative decoding for autoregressive image generation.</p>
-            </div>
-          </a>
-          <a class="program-row" href="#evar">
-            <span class="program-marker" aria-hidden="true"></span>
-            <div class="program-meta">
-              <span>Paper 02</span>
-              <em>Edge AI</em>
-            </div>
-            <div class="program-main">
-              <strong>EVAR</strong>
-              <p>Principled pruning for edge visual autoregressive models.</p>
-            </div>
-          </a>
-          <a class="program-row" href="#tars">
-            <span class="program-marker" aria-hidden="true"></span>
-            <div class="program-meta">
-              <span>Paper 03</span>
-              <em>Reliability</em>
-            </div>
-            <div class="program-main">
-              <strong>TARS</strong>
-              <p>Token-adaptive preference optimization for MLLM grounding.</p>
-            </div>
-          </a>
-          <a class="program-row tutorial-entry" href="#tutorial">
-            <span class="program-marker" aria-hidden="true"></span>
-            <div class="program-meta">
-              <span>Tutorial</span>
-              <em>Inference</em>
-            </div>
-            <div class="program-main">
-              <strong>Sep 8 Morning</strong>
-              <p>Efficient MLLM inference via approximate and exact computing.</p>
-            </div>
-          </a>
-        </div>
-      </section>
-
       <section class="section people-section" id="people">
-        <div class="section-heading centered">
-          <p class="section-kicker">ENCODE Lab Family</p>
-          <h2>The people behind our ECCV 2026 work.</h2>
+        <div class="section-heading centered people-intro">
+          <p class="section-kicker">The ECCV 2026 Crew</p>
+          <h2>Meet the people behind our work.</h2>
+          <p>Five ENCODE Lab researchers contributing papers, presentations, and the tutorial in Malm&ouml;.</p>
           <a
             class="lab-link"
             href="https://westlake-encode-lab.github.io/"
@@ -289,51 +211,64 @@
         </div>
       </section>
 
-      <section class="section tutorial-section" id="tutorial">
-        <div class="tutorial-stage">
-          <div class="tutorial-media">
-            <img src="assets/media/tutorial_inference_banner.png?v=20260818-2" alt="Efficient MLLM inference visual">
-            <div class="tutorial-caption">
-              <span>Morning Tutorial</span>
-              <strong>Sep 8 · Malm&ouml;</strong>
-            </div>
-          </div>
-
-          <div class="tutorial-copy">
+      <section class="tutorial-section" id="tutorial">
+        <div class="tutorial-header">
+          <div class="tutorial-intro">
             <p class="section-kicker">ECCV 2026 Tutorial</p>
             <h2>Efficient MLLM Inference via Approximate and Exact Computing.</h2>
-            <p>
-              Methods for reducing multimodal inference cost under quality,
-              grounding, and hardware constraints.
+            <p class="tutorial-lede">
+              Multimodal large language models are powerful but expensive to serve. This tutorial presents a systematic view of efficient inference through two complementary lenses: approximate computing that removes model and data redundancy while preserving practical utility, and exact computing that improves systems and hardware execution without changing model outputs.
             </p>
-            <div class="tutorial-tags" role="group" aria-label="Tutorial topics">
-              <span>Approximation</span>
-              <span>Exact reuse</span>
-              <span>Token selection</span>
-              <span>Serving</span>
-            </div>
+            <dl class="tutorial-facts">
+              <div><dt>Date</dt><dd>Sep 8, 2026</dd></div>
+              <div><dt>Time</dt><dd>09:00&ndash;12:00</dd></div>
+              <div><dt>Location</dt><dd>Malm&ouml;, Sweden · Room TBD</dd></div>
+            </dl>
             <a class="button primary" href="https://einfer-mllm.github.io/Tutorial-ECCV-26/" target="_blank" rel="noopener">
-              Tutorial Page
+              Full Tutorial Page
             </a>
+          </div>
+
+          <div class="tutorial-topics" aria-label="Tutorial topics">
+            <p class="tutorial-label">Three main topics</p>
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Model Compression</h3>
+                <p>Quantization, sparsity, and low-rank decomposition for reducing model redundancy in MLLM inference.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Token Efficiency</h3>
+                <p>Training and training-free compression methods for long multimodal inputs and autoregressive generation.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>System-Level Design</h3>
+                <p>Exact computing methods and inference frameworks that improve throughput and latency without changing the computed result.</p>
+              </div>
+            </article>
           </div>
         </div>
 
-        <div class="tutorial-structure" role="group" aria-label="Tutorial structure">
-          <article>
-            <span>01</span>
-            <strong>Approximate computing</strong>
-            <p>Skip redundant visual and textual computation.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <strong>Exact computing</strong>
-            <p>Reuse computation without changing model outputs.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <strong>Systems practice</strong>
-            <p>Tie model choices to latency, memory, and hardware limits.</p>
-          </article>
+        <div class="tutorial-schedule" aria-label="Tutorial schedule">
+          <div class="schedule-heading">
+            <p class="tutorial-label">Morning program</p>
+            <h3>From compression to systems.</h3>
+            <p>Three technical sessions, followed by questions and closing remarks.</p>
+          </div>
+          <ol>
+            <li><time datetime="09:00">09:00</time><div><strong>Opening Remarks</strong><span>Huan Wang</span></div></li>
+            <li><time datetime="09:10">09:10</time><div><strong>Approximate Computing I: Model Compression</strong><span>Huan Wang</span></div></li>
+            <li><time datetime="10:00">10:00</time><div><strong>Approximate Computing II: Token Efficiency</strong><span>Bo Li</span></div></li>
+            <li class="schedule-break"><time datetime="10:50">10:50</time><div><strong>Coffee Break and Discussions</strong><span>Informal discussion</span></div></li>
+            <li><time datetime="11:00">11:00</time><div><strong>Exact Computing: System-Level Optimization</strong><span>Chenyang Zhao</span></div></li>
+            <li><time datetime="11:50">11:50</time><div><strong>Q&amp;A and Closing Remarks</strong><span>Huan Wang</span></div></li>
+          </ol>
         </div>
       </section>
 
@@ -354,6 +289,6 @@
       </p>
     </footer>
 
-    <script src="script.js?v=20260818-2"></script>
+    <script src="script.js?v=20260818-3"></script>
   </body>
 </html>

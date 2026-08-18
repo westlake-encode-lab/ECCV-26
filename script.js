@@ -6,7 +6,7 @@ const themeToggle = document.querySelector(".theme-toggle");
 const themeLabel = document.querySelector(".theme-label");
 const sections = [...document.querySelectorAll("main section[id]")];
 const revealItems = document.querySelectorAll(
-  ".summary-strip, .program-copy, .program-board, .section-heading, .people-row, .paper-card, .tutorial-stage, .tutorial-structure"
+  ".section-heading, .people-row, .paper-card, .tutorial-header, .tutorial-schedule"
 );
 
 function updateHeader() {
